@@ -2,22 +2,27 @@
 int main() 
 {
 	int age;
+	printf("Entrez votre age compris entre 12 à 20 \n");
+	scanf("%d", &age);
+	
 	switch(age)
 	{
-		case 2:
-		printf("bonjour bébé \n");
+		case 12:
+			printf("Adolescent \n");
 		break;
 		case 16:
-		printf("Bonjour Adolescent \n");
+			printf("Mineur \n");
 		break;
 		case 18:
-		printf("Bonjour Adulte \n");
+			printf("Majeur \n");
 		break;
 		case 20:
-		printf("Bonjour Majeur \n");
+			printf("Adulte \n");
 		break;
 		default:
-		printf("je n'ai pas d'âge pour de donné \n");
-		return 0;
-	}	
+			printf("Aucun age à l'attribué \n");
+		break;
+	}
+	return 0;
+
 }

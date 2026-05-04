@@ -4,7 +4,7 @@ int main()
 {
 	int choixMenu;
 
-	printf("=== Menu ===");
+	printf("=== Menu === \n");
 	printf("1. Royal Cheese\n2. Mc Deluxe\n3. Mc Baron\n4. Big Mac \n");
 	scanf("%d", &choixMenu);
 
@@ -26,8 +26,8 @@ int main()
 			printf("J'ai choisi Big Macon \n");
 		break;
 
-		defaul:
-			printf("Aucun choix a été fait");
+		default:
+			printf("Erreur \n");
 		break;
 		return 0;
 	}
