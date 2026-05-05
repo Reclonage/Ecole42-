@@ -2,14 +2,18 @@
 
 int triple(int nombre)
 {
-	int resultat = 0;
-
-	resultat = 3 * nombre;
-	return resultat;
+	return 3 * nombre;
 }
 int main()
 {
-	printf("%d \n", triple(-2));
+	int nombreTrip = 0;
+	int nombreEntr = 0;
+
+	printf("Tape un nombre sur le clavier : ");
+	scanf("%d", &nombreEntr);
+
+	nombreTrip = triple(nombreEntr);
+
+	printf("Le triple est : %d\n", nombreTrip);
 	return 0;
-	printf("\n");
 }
